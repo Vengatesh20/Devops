@@ -1,7 +1,2 @@
-FROM python:latest
-
-WORKDIR /
-
-COPY . /
-
-CMD ["python", "python.py"]
+FROM nginx:alpine
+COPY . /usr/share/nginx/html
